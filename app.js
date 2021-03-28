@@ -43,7 +43,7 @@ function valideForm(e) {
         city = formulario['inputCity'],
         state = formulario['inputState'],
         postalCode = formulario['inputPostalCode'],
-        creditCard = document.querySelector('input[name=creditCardOptions]:checked'),
+        // creditCard = document.querySelector('input[name=creditCardOptions]:checked'),
         message = formulario['inputMessage'];
 
     if(!existError) {
@@ -77,7 +77,6 @@ function valideForm(e) {
         if(message.value === "") {
             validaInput(message, "Please provide a valid message");
         }
-
         errorAlert(cardNumber);
         existError = true;
     }
